@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,12 +109,14 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>معصومه سبحانی</h1>
             <div class="statement">
-                در این مجموعه آثار کوچک، طبیعت برای من نه منظره‌ای قابل بازنمایی، بلکه جریانی زنده از نور، فرم و حرکت است. در رنگ‌ها زمزمه‌ای دارد که رویاهای طبیعت را زمزمه می‌کند.
+                در این مجموعه آثار کوچک، طبیعت برای من نه منظره‌ای قابل بازنمایی، بلکه جریانی زنده از نور، فرم و حرکت
+                است.
             </div>
         </header>
 
@@ -125,20 +128,20 @@
     <script>
         // Artwork data - update these with actual details
         const artworks = [
-            { image: 'images/1.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/2.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/3.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/4.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/5.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/6.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/7.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/8.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/9.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' },
-            { image: 'images/10.jpg', technique: 'روغن روی بوم', size: '30x40 سانتی‌متر', price: 'تماس بگیرید' }
+            { image: 'images/1.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '12x17 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/3.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '12x17 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/4.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '12x17 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/6.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '12x17 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/5.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '12x17 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/2.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '12x17 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/8.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '16x11 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/10.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '16x11 سانتی‌متر', price: '3 میلیون تومان' },
+            { image: 'images/7.jpg', year: "1403", technique: 'رنگ روغن روی مقوا', size: '12x17 سانتی‌متر', price: '4 میلیون تومان' },
+            { image: 'images/9.jpg', year: "1403", technique: 'تکسچر و رنگ روغن روی پارچه بوم', size: '30x20 سانتی‌متر', price: '5 میلیون تومان' },
         ];
 
         const gallery = document.getElementById('gallery');
-        
+
         artworks.forEach(artwork => {
             const artworkElement = document.createElement('div');
             artworkElement.className = 'artwork';
@@ -148,10 +151,12 @@
                     <p><strong>تکنیک:</strong> ${artwork.technique}</p>
                     <p><strong>سایز:</strong> ${artwork.size}</p>
                     <p class="price"><strong>قیمت:</strong> ${artwork.price}</p>
+                    <p class="year"><strong>سال خلق:</strong> ${artwork.year}</p>
                 </div>
             `;
             gallery.appendChild(artworkElement);
         });
     </script>
 </body>
+
 </html>
